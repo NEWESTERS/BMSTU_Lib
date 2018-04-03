@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +17,53 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Библиотека" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvZ-Kr-8KM">
+                                <rect key="frame" x="-0.5" y="403.5" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B0W-7F-gcr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GERB" translatesAutoresizingMaskIntoConstraints="NO" id="F0e-Fl-F6t">
+                                <rect key="frame" x="-0.5" y="93.5" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="M25-kB-8ei"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="МГТУ им. Н.Э. Баумана" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jf-6H-eTB">
+                                <rect key="frame" x="0.0" y="463.5" width="375" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="ukh-rh-SW5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.85882352939999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F0e-Fl-F6t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GJd-ky-9UF"/>
+                            <constraint firstItem="8jf-6H-eTB" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="Hvl-HQ-uXF"/>
+                            <constraint firstItem="8jf-6H-eTB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NYd-UK-c2w"/>
+                            <constraint firstItem="F0e-Fl-F6t" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="NdV-mC-Yxp"/>
+                            <constraint firstItem="8jf-6H-eTB" firstAttribute="top" secondItem="IvZ-Kr-8KM" secondAttribute="bottom" constant="10" id="WMn-vB-I2E"/>
+                            <constraint firstItem="IvZ-Kr-8KM" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="be5-e7-gZU"/>
+                            <constraint firstItem="F0e-Fl-F6t" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="bfv-h4-iUf"/>
+                            <constraint firstItem="IvZ-Kr-8KM" firstAttribute="top" secondItem="F0e-Fl-F6t" secondAttribute="bottom" constant="10" id="iqU-GA-dsy"/>
+                            <constraint firstItem="IvZ-Kr-8KM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qip-a7-Yed"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GERB" width="2000" height="2360"/>
+    </resources>
 </document>
